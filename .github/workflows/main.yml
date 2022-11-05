@@ -18,6 +18,7 @@ jobs:
          pwd
          ls -al
          echo "hello" 
+         echo "world"
        
     - name: using Checkout
       uses: actions/checkout@v3
