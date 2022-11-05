@@ -10,6 +10,7 @@ jobs:
   fortune-CA:
     runs-on: ubuntu-latest
 
+
     steps:
      #just testing checkout actions
     - name: List file
@@ -17,7 +18,7 @@ jobs:
          pwd
          ls -al
          echo "hello" 
-         echo "world"
+       
     - name: using Checkout
       uses: actions/checkout@v3
     - name: List file
@@ -25,4 +26,4 @@ jobs:
         pwd
         ls -al
         echo "hello"
-        echo "world"
+       
