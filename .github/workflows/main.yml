@@ -1,0 +1,28 @@
+name: ForTune-CA
+
+on:
+  push:
+    branches: 
+       - 'v[0-9]+.[0-9]+' #setup1 validate branch name format according to assignment
+      
+
+jobs:
+  fortune-CA:
+    runs-on: ubuntu-latest
+
+    steps:
+     #just testing checkout actions
+    - name: List file
+      run: |
+         pwd
+         ls -al
+         echo "hello" 
+         echo "world"
+    - name: using Checkout
+      uses: actions/checkout@v3
+    - name: List file
+      run: |
+        pwd
+        ls -al
+        echo "hello"
+        echo "world"
